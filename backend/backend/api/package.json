@@ -1,0 +1,13 @@
+{
+  "name": "os-gatos-indicam-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for Os Gatos Indicam",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests needed\" && exit 0",
+    "build": "echo \"No build step needed\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  }
+}

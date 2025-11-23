@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Cadastro — Os Gatos Indicam</title>
+  <link href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Nunito:wght@300;400;700&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='style.css'>
+  <script src='script.js' defer></script>
+</head>
+<body>
+  <!-- Menu fixo em todas as páginas -->
+  <nav class="fixed-nav">
+    <div class="nav-container">
+      <div class='logo'><h1>Os Gatos Indicam</h1></div>
+      <ul>
+        <li><a href='index.html'>Início</a></li>
+        <li><a href='cadastro.html'>Cadastro</a></li>
+        <li><a href='produtos.html'>Preferências</a></li>
+        <li><a href='contato.html'>Contato</a></li>
+        <li><a href='sobre.html'>Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class='container'>
+    <header>
+    </header>
+    <main>
+      <div class='pref-card'>
+        <h2>Cadastro</h2>
+        <p style='color:var(--muted); margin-bottom: 24px;'>Complete seu cadastro para receber recomendações personalizadas dos nossos gatos.</p>
+        
+        <form id='form-cadastro'>
+          <div class='form-grid'>
+            <!-- Dados Pessoais -->
+            <div class='form-group'>
+              <label for='nome'>Nome completo *</label>
+              <input id='nome' type='text' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='idade'>Idade *</label>
+              <input id='idade' type='number' min='12' max='120' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='email'>E-mail *</label>
+              <input id='email' type='email' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='telefone'>Telefone</label>
+              <input id='telefone' type='tel' placeholder='(11) 99999-9999'>
+            </div>
+            
+            <!-- Separador -->
+            <div class='form-group' style='grid-column:1 / -1'>
+              <hr style='border: none; border-top: 2px solid rgba(90,30,166,0.1); margin: 20px 0;'>
+              <h3 style='color: var(--accent); font-family: "Cormorant Garamond", serif; margin-bottom: 16px;'>Endereço</h3>
+            </div>
+            
+            <!-- Busca por CEP -->
+            <div class='form-group'>
+              <label for='cep'>CEP *</label>
+              <div class="cep-container">
+                <input id='cep' type='text' maxlength='9' placeholder='00000-000' required>
+                <button type="button" id="buscar-cep" class="cep-button">Buscar CEP</button>
+              </div>
+              <small style='color:var(--muted); font-size: 0.85rem;'>Digite o CEP e clique em Buscar para preencher automaticamente</small>
+            </div>
+            
+            <div class='form-group'>
+              <label for='logradouro'>Logradouro *</label>
+              <input id='logradouro' type='text' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='numero'>Número *</label>
+              <input id='numero' type='text' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='complemento'>Complemento</label>
+              <input id='complemento' type='text' placeholder='Apto, Bloco, Casa...'>
+            </div>
+            
+            <div class='form-group'>
+              <label for='bairro'>Bairro *</label>
+              <input id='bairro' type='text' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='cidade'>Cidade *</label>
+              <input id='cidade' type='text' required>
+            </div>
+            
+            <div class='form-group'>
+              <label for='estado'>Estado *</label>
+              <input id='estado' type='text' required readonly style='background-color: rgba(90,30,166,0.05);'>
+            </div>
+          </div>
+          
+          <div class='btn-center'>
+            <button type='submit' class='primary'>Salvar informações</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>© 2025 Os Gatos Indicam - Todos os direitos reservados</p>
+    </footer>
+  </div>
+</body>
+</html>
