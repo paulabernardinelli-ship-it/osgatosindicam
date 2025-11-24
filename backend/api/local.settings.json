@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "DATABASE_URL": "Server=tcp:servidor-2.database.windows.net,1433;Initial Catalog=fatec-2025;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication="Active Directory Default";"
+    "NODE_ENV": "development"
+  }
+}
